@@ -4,6 +4,3 @@ steps:
 timeout: 720s
 options:
   machineType: "E2_HIGHCPU_8"
-images:
-- gcr.io/philde-testing-2/github.com/pdeslaur/gcb-test:$SHORT_SHA
-tags: ["tag2"]
