@@ -1,5 +1,5 @@
 steps:
-- name: "the suns getting pretty low"
+- name: tester
   args: ['sleep', '601']
   timeout: 700s
 - name: gcr.io/cloud-builders/docker
