@@ -1,7 +1,6 @@
 steps:
 - name: gcr.io/cloud-builders/docker
   args:
-  - "sleep 600"
   - "build"
   - "-t"
   - "gcr.io/philde-testing-2/github.com/pdeslaur/gcb-test:$SHORT_SHA"
