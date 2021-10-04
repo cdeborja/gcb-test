@@ -13,7 +13,7 @@ steps:
   args: ['sleep', '600']
 timeout: 720s
 options:
-  machineType: "N1_HIGHCPU_8"
+  machineType: "N1_HIGHCPU_FAKE"
 images:
 - gcr.io/philde-testing-2/github.com/pdeslaur/gcb-test:$SHORT_SHA
 tags: ["tag2"]
