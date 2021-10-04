@@ -1,19 +1,9 @@
 steps:
-- name: gcr.io/cloud-builders/docker
-  args:
-  - "build"
-  - "-t"
-  - "gcr.io/philde-testing-2/github.com/pdeslaur/gcb-test:$SHORT_SHA"
-  - "."
-- name: gcr.io/cloud-builders/docker
-  args:
-  - "push"
-  - "gcr.io/philde-testing-2/github.com/pdeslaur/gcb-test:$SHORT_SHA"
 - name: 'ubuntu'
-  args: ['sleep', '600']
+  args: ['sleep', '601']
 timeout: 720s
 options:
-  machineType: "N1_HIGHCPU_FAKE"
+  machineType: "E2_HIGHCPU_8"
 images:
 - gcr.io/philde-testing-2/github.com/pdeslaur/gcb-test:$SHORT_SHA
 tags: ["tag2"]
