@@ -1,6 +1,6 @@
 steps:
 - name: 'ubuntu'
-  args: ['sleep', '601']
-timeout: 720s
+  args: ['sleep', '901']
+timeout: 1200s
 options:
   machineType: "E2_HIGHCPU_8"
